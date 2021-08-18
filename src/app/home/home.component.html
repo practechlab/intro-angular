@@ -1,0 +1,20 @@
+<div class="play-container">
+   <p>You have clicked <span (click)="clickedFunction()" class="button" >this</span> <b>&nbsp;{{this.clickCounter}} </b>  times.</p>
+</div>
+<div class="play-container">
+   <h3>Form</h3>
+
+   <label for="name">Name: </label>
+   <input id="name" type="text" [(ngModel)]="this.employee.name" placeholder="Name"/> 
+   <br><br>
+   <label for="age">Age:  </label>
+   <input id="age" type="text" [(ngModel)]="this.employee.age" placeholder="Age"/> 
+   <br><br>
+   <label for="place">Place: </label>
+   
+   <input id="place" type="text" [(ngModel)]="this.employee.place" placeholder="Place"/> 
+   
+   <br><br>
+   <button (click)="onSave(this.employee)">submit</button>
+
+</div>
